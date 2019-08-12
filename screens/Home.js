@@ -10,7 +10,7 @@ export default class Home extends React.Component {
 
     render() {
 
-      let photo = this.props.navigation.getParams("photo", "empty") // 
+      let photo = this.props.navigation.getParam("photo", "empty") // 
 
       return (
         <View style={styles.container}>
@@ -42,6 +42,11 @@ export default class Home extends React.Component {
       alignSelf: "center"
     },
     button: {
+      margin: 20
+    },
+    imageHolder: {
+      alignSelf: "center",
+      height: 500,
       margin: 20
     }
   });
